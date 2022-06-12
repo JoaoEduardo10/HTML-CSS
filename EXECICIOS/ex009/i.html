@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista</title>
+    <style>
+        select#lista {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="adicionar" id="tt">
+
+    
+
+    <section>
+        <select name="" id="lista" size="10">
+
+        </select>
+    </section>
+    <input type="button" value="resultado" id="resu">
+    <div id="res"> 
+        
+
+    </div>
+    <script>
+        var tex = document.getElementById('txt')
+        var a = document.getElementById('tt')
+        var res = document.getElementById('res')
+        var lista = document.getElementById('lista')
+        var resu = document.getElementById('resu')
+        resu.addEventListener('click', resultado)
+        a.addEventListener('click', adicionar)
+        var nome = []
+        var alea = "erro "
+
+
+       function adicionar() {
+            if( String(tex.value) == 0) {
+                alert('[ERRO!] Por favo adicione um nome')
+            }else {
+                nome.push(String(tex.value.toLowerCase()))
+                let item = document.createElement("option")
+                item.text = `O nome ${tex.value} adicionado`
+                lista.appendChild(item)
+            }
+            tex.value =  " "
+       }
+       function resultado(){
+           if(String(nome.length) == 0) {
+               alert('[ERRO]')
+           } else {
+                let tot = nome.length
+                let maior = nome[0]
+                let menor = nome[0]
+                let soma = 0
+                let media = 0
+
+                for(let pos in nome) {
+                    if (nome[pos] > maior) {
+                        maior = nome[pos]
+                    } else if (nome[pos]  < menor) {
+                        menor = nome[pos]
+                    }
+                }
+
+               media = soma/2
+               
+               res.innerHTML = `todos os nomes são ${tot}`
+               res.innerHTML += `<p>O maior nome é ${maior}</p>`
+               res.innerHTML +=` <p>O menor nome é o ${menor}</p>`
+           }
+       }
+       
+    </script>
+</body>
+</html>

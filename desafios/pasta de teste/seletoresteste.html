@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        div{
+            display: inline-block;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+        
+        div:hover{
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Praticando os seletores personalizados</h1>
+    
+    <div class="txt" onclick="c()" onmouseout="s()">
+        01
+    </div>
+    <div class="txt" onclick="c()" onmouseout="s()">
+        02
+    </div>
+    <div class="txt" onclick="c()" onmouseout="s()">
+        03
+    </div>
+    <script>
+        var ra = document.querySelector('div.txt')
+        
+        function c(){
+           ra.style.background = " red"
+        }
+        function s(){
+            ra.style.background = "aqua"
+            
+        }
+    </script>
+   
+</body>
+</html>
