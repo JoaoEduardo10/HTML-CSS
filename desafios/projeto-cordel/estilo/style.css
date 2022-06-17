@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'rustica';
+    src: url("../fonts/Cordel\ Rustika.otf") format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "cordel";
+    src: url('../fonts/cordelina.otf') format('opentype');
+    font-weight: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=&Srirachadisplay=swap');
+
+:root{
+    --cor1: #6F9E1E;
+    --cor2:#3067EB;
+    --cor3: #aeeb4459;
+    --cor4: #eb3510a4;
+    --cor5: #9E432F;
+
+   --fonte-principal: Verdana, Geneva, Tahoma, sans-serif;
+   --fonte-texto: 'rustica';
+   --fonte-titulo: 'cordel';
+   --font-texto2:'Sriracha',cursive;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.041);
+}
+.pare{
+    font-size: 3,5vw;
+}
+a{
+  color: white;  
+  text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    background-image: linear-gradient(to bottom, black, var(--cor4));
+    color: white;
+    width: 100%;
+
+}
+header > h1{
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;
+
+}
+header > p{
+    text-align: center;
+    padding-bottom: 50px;
+    width: 100%;
+    font-size: 3.5vw;
+}
+
+section{
+    position: relative;
+    font-family: var(--font-texto2);
+    margin-top: 10vh;
+    font-size: 3.5vw;
+    line-height: 2em;
+
+}
+
+ p{
+    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.041), transparent );
+    
+    
+    padding: 30px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.288);
+}
+
+section.imagem{
+    background-color: black;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 2px 2px 13px 12px rgba(0, 0, 0, 0.473);
+    
+    
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.137);
+    display: inline-flex;
+    font-weight: bolder;
+    margin-top: 15vw;
+    margin-left: 3vw;
+    box-shadow: 2px 2px 8px black;
+    
+
+}
+img#imagem1{
+   position: absolute;
+   width: 40vw;
+   height: 53vw;
+   box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.527);
+   border-radius: 10px;
+   
+
+
+   left: 50vw;
+}
+img#imagem2{
+    position: absolute;
+    width: 50%;
+    height: 60vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.527);
+
+    top: 50vw;
+    left: 47vw;
+}
+img#imagem4{
+    position: absolute;
+
+    width: 30%;
+
+    top: 30vw;
+    left: 60vw;
+}
+
+
+#img1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    height: 90vW;
+}
+
+#img2{
+    background-image: url('../imagens/background002.jpg');
+   height: 90vw;
+    background-size: cover;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    margin: 1vw;
+}
+footer > p{
+    padding: 10px;
+}
+
+
+
+
