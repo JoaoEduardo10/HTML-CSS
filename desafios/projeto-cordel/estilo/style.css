@@ -33,6 +33,10 @@ body{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.041), transparent );
     
 }
+p{
+     
+padding-bottom: 40px;
+}
 .pare{
     font-size: 3,5vw;
 }
@@ -69,21 +73,14 @@ section{
     position: relative;
     font-family: var(--font-texto2);
     margin-top: 10vh;
-    font-size: 4vw;
+    font-size: 1.3em;
     line-height: 2em;
     padding: 20px;
     
 
 }
 
- p{
-    
-    
-    
-    
-    
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.288);
-}
+
 
 section.imagem{
     background-color: black;
@@ -106,24 +103,24 @@ section.imagem > p {
 }
 img#imagem1{
    position: absolute;
-   width: 40vw;
+   width: 39vw;
    height: 53vw;
    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.527);
    border-radius: 10px;
 
 
 
-   left: 48vw;
+   left: 56vw;
 }
 img#imagem2{
     position: absolute;
-    width: 45vw;
+    width: 46vw;
     height: 60vw;
     border-radius: 10px;
     box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.527);
 
     top: 50vw;
-    left: 47vw;
+    left: 50vw;
 }
 img#imagem4{
     position: absolute;
