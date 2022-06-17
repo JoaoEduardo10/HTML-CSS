@@ -69,7 +69,7 @@ section{
     position: relative;
     font-family: var(--font-texto2);
     margin-top: 10vh;
-    font-size: 3.5vw;
+    font-size: 4vw;
     line-height: 2em;
     padding: 20px;
     
@@ -155,6 +155,7 @@ footer{
 }
 footer > p{
     padding: 10px;
+    margin-bottom: -10px;
 }
 
 
