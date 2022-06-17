@@ -28,8 +28,10 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
-    background-color: rgba(0, 0, 0, 0.041);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.041), transparent );
+    
 }
 .pare{
     font-size: 3,5vw;
@@ -45,6 +47,7 @@ header{
     background-image: linear-gradient(to bottom, black, var(--cor4));
     color: white;
     width: 100%;
+   
 
 }
 header > h1{
@@ -68,15 +71,17 @@ section{
     margin-top: 10vh;
     font-size: 3.5vw;
     line-height: 2em;
+    padding: 20px;
+    
 
 }
 
  p{
     
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.041), transparent );
     
     
-    padding: 30px;
+    
+    
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.288);
 }
 
@@ -105,14 +110,14 @@ img#imagem1{
    height: 53vw;
    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.527);
    border-radius: 10px;
-   
 
 
-   left: 50vw;
+
+   left: 48vw;
 }
 img#imagem2{
     position: absolute;
-    width: 50%;
+    width: 45vw;
     height: 60vw;
     border-radius: 10px;
     box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.527);
@@ -122,7 +127,7 @@ img#imagem2{
 }
 img#imagem4{
     position: absolute;
-
+    
     width: 30%;
 
     top: 30vw;
@@ -151,6 +156,7 @@ footer{
 footer > p{
     padding: 10px;
 }
+
 
 
 
