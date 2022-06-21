@@ -1,0 +1,316 @@
+HTML E CSS:
+
+sites;
+-> github.com/gustavoguanabara
+-> gustavoguanabara.github.io
+
+BIBIOGRAFIA RECOMENDADAS:
+->mozila
+
+
+INTERNET:
+
+-> NCP; protocolo de navegação antigo
+->TCP/ip; protocolo de navegação atual.
+
+a internet veio da criacao da DARPA que crio a ARPANET para proteger seus dados.
+
+DNS;
+-> Ele e tipo uma "BIBLIOTECA" que fas a busca dos site, pois eletem um IP que muda costantemente
+
+URL:
+-> e o Nome do site Completo
+
+TLD -> que ode ser GTLD ou TTLD.
+GTLD é io, com, gov  por ai
+ccTLD é os que tem sigla de ais tipo br
+
+Domio;
+-> É o nome que indentifica o site.
+-> Ele tabem e um nume unico.
+HOspedagem;
+-> É o local onde o site vai esta armazenado.
+
+
+HTML:
+algumas html tem parametros e valor sem o fechamento de teg.
+-> siginifica HYPERTEXT MARKUP LANGUAGE
+-> ela é uma linguagem focada em conteudo.
+
+
+ESTRUTURAS BÁSICA;
+<!doctype html>(para dizer que é HTML)
+<html lang="pt-br">(inicio)
+	<head>(cabeça)
+	<meta charset="UTf-8">  (UTF-8 é padrão de caracteres que surporta acentuação)
+	<meta name " ">
+	<title>documento</title>
+	
+	</head>
+	<body>(corpo)
+
+	</body>
+</html>
+
+
+
+COMANDOS
+<h1> -> titulos(teg)
+<p> -> paragrafo(teg)
+<img src = "foto.png " alt = 'explo de algo" -> para colocar fotos
+<hr> -> faz uma linha na Horizontal.s(marcação)
+<br> -> para quebra a linha para baixo.
+<limk favicon > -> (na parte do head para botra o icone)
+<address> -> para indicar um endereço.
+<b> -> para botar em negrito (forma não semantica)
+<strong> -> para botar em negrito (forma semantica)
+<i> -> para bota em italico(forma não semantica)
+<em> -> para botar em italico(forma semantica)
+<mark> -> para marca o texto.
+<big> -> para ficar grandes(não semantica).
+<small> -> para deixar letras pequenas(semantica).
+<del> -> para indicar que o texto esta excluido.
+<ins> -> para marca uma linha embaixo como enserido.
+<sup>-> para deixar acima da linha
+<sub> -> abaixo da linha.
+<code> -> para melhora o espaçamentoentre as letras(fonte monoespaçada)
+<pre> -> para ficar com identação(ficar alinhado de acordo com os meu entre.
+<q> ->sentido de sitação. coloca as ("").sendo uma sitação simples
+<blockquote> _> sitação completa ele tem uma quebra de lina e o deslocamento para direita.vc pode da a referecia 
+usando (cite) EX; <blockquote cite = " alguma referecia do goggle">
+<abbr>para dizer que uma determinada  palavra é uma abreviação.
+<bdo> caso seja "rtl" ele investe todo o texto ex: <bdo  dir ="rtl">.
+<ol> -> serve para fazdr uma lista ordenada. para ca idetem voçè bota um <li> -> para lista podendo tambem
+usar o type para sabe r se vai ser em unidae numerica ou outros EX; <ol type = "1">
+<ul> para listas não ordenadas. o type dele tem square e circle.
+<dl> -> para lista de definiçoes. dENTRO DELA EU TENHP <DT>(TERMO) E <DD>(DESCRIÇÃO)
+<a> -> para acessar links externos. Para abra uma pagina em braco fora da sua sempre 
+bote <a href="URL do site" target="_blank" rel="external"> rel="nofollow" rel ='prev' -> em caso de nao aval
+iana.org -> para saber quaal o type de download da teg <a>.
+<picture> <source> midia type -> para ajusta a imagem no tamanhdo de cada maquina que esta acessando
+<audio src="midia/happy-mistake.mp3" controls autoplay></audio> -> para colocar o audio
+<audio preload="metadata" autoplay controls loop >
+        <source src="" type=""> -> segundo modo de colocar audio.
+</audio>
+<video width="400" controls  poster="imagem/limoes-capa.png">
+	<source src="" type="" -> colocar os videos
+<video>
+<main> -> diz que é o conteudo principal
+<div> -> (box level) ele quebra a linha
+<span> -> (inline level) Não quebra a linha
+<header> -> cabeçalho..inicio do site != header
+<main> -> conteudo principal
+<footer> -> rodapé
+<nav> -> para navegação
+<setion> -> seções dentro do site
+</article> ->  assunto princiapl
+</aside> -> assunto de mais(conteudo periferico)
+<table> - para criar tabelas
+// na tebelas simples temos o "table row"(linhas de tabela),"table haeder"(cabeçalho de tabela),
+"table DATA"(dado de tabela)//
+<tr colspan="2" para ocupar colunas rowspan="3" para ocupar linhas> -> table row
+<td> -> table data
+<caption> para bota um text ta tabela por inteiro
+
+
+
+
+
+Imagem:
+
+SITES QUE NÃO TEM DIREIRO AUTORAIS; unsplash,pexels,
+
+
+EMOJIS:
+semore que for adicionar um emoji, é so ir no site emojepedia 
+e bota no vscode -> &#x mas a numeração do emoji EX; &#x1F60E; sempre com o (;) no final
+
+ICONIS:
+
+para faver os icones dezenhado e so ir no site; (favicon.cc) ou ir em (icon archive) e (favicon io)
+
+
+CARACTERES ESPECIAIS:
+sempre botanto o & comercial
+
+EX;
+
+&lt; -> menor Q
+&gt; -> maior Q
+&reg; -> ( ®) sinblo de um R dentro de uma bola
+&copy; ->( ©) simbolo de um C dentro de uma bola
+&trade; simboo (™ ) comercial
+&euro; simbolo para dinehiro em dola
+&pound;simbolo de dinheiro
+&yen; sinbolo de dinheiro eem japones
+&cent; sincolo de centavos em dolares
+&Delta; para mostra o delta
+&uparrow ou &uarr; para mostra uma seta para cima 
+
+
+CSS:
+ele tem seletores, declarações e toda declaração tem sua propriedade e seu valor.
+-> siginifica CASCADING STYLE  SHEETS
+-> ela cuida da parte bonita do texto o design
+
+
+COMANDOS:
+
+background-color: para cor de fundo
+color: cor das letras.
+fonte: botar o tipo de fonte e o tamanho junto
+font-family; para botar a fote que desejar
+font-size; tamanho da fonte
+text-align; para ajusta os texto
+text-decoration: underline; para botar sublinhado
+background-image: ; para fazer degrad
+* {
+}    seletor global das CSS
+
+background-attachment: fixed; fundo fixo
+font-weight(peso): ; para calcular o peso
+font-style: ; para escolher o estilo da fonte(italico por ai.
+fonte: : orde, Fstyle Fweight Fsize Ffamily(F siguinifica fonte)
+
+@font-face { para botar fontes externas
+            font-family: ;
+            src: url('Filxgirl.TTF') format('truetype');
+
+
+            /* 
+                - opentype(otf)
+                - truetype(ttf)
+                - embedded-opentype
+                - truetype-att
+                -svg
+
+
+
+            */
+
+text-indent: 20px; para ajeitar o inicio do paragrafo
+bordder: cria uma borda(interna)
+border-radius: 20px; para ajeitra a borda(mais arredondada)
+height: 200px; altura
+width: 200px; largura
+display: inline-block; para botar tuudo na mesma linha
+padding: espaco (interno)
+margin: espaço (externo)
+outline; cria uma borda (externa)
+border-image-source: url('borda.png'); para adicionar imagem como bordA
+border-image-slice: 20; O TAMANHO DA DISTORÇÃO DA BODA
+border-image-repeat: repeat; PARA A BODAR REPETIR
+border-image: url('borda.png') 27 repeat; jeiro completo
+transition-duration: ; para o tempo de transição
+ line-height: ; altura da linha.
+list-style-position: inside; posiçao as bolas em uma lista
+columns: esolher colunas
+list-style-type: '\2714'; para botar emojis no css, sempre coma contra barra
+position: relative, absolut; para saber qual a posução ficça
+background-attachment: fixed; para bota a posicao da imagem de fundo
+text-transform: uppercase; para por todas as letras em maisculo
+font-variant: small-caps; tabem deixa as letras maiusculas mas com as primeira maiores
+border-collapse: ; serve para jutar as bordas
+vertical-align: ;sever para mover dados de uma tabela para o top ou bottom.(alinhamento vertical
+<colgroup>
+<col >  esse dois serve para selecionar uma coluna teita no htmls e modificar no css
+overflow-x: conteudo que esta tranbordando
+
+
+
+
+
+
+
+
+PISEUDO CLASS
+div:hover{
+	quando passar o mouse por cima
+}
+
+
+a:visited{ pode muda a cor do teste, se for um link e pode entra quando voltar vai esta de outra corSS
+a:active{ para quando clicar e ficar ativo...
+:nth-child(2n) para zebra as linha..deixa um pintado e outro não pintado
+
+
+
+PISEUDOS ELEMENTOS
+ A::before{ antes de algun elemento
+A::after{ DEPOIS DE ALGUN ELEMENTO
+dentro deles pode ter o content: ''
+......................................
+
+
+
+
+REGRAS DO CSS:
+@charset "UTF-8": serve para aceitar aentuação
+
+
+
+
+
+
+DISING Cores:
+
+siguinificado das cores;
+* Vermelho: raiva, paixão, fúria, ira, desejo, excitação, energia, velocidade, força, poder, calor, amor, agressão, perigo, fogo, sangue, guerra, violência
+* Rosa: amor, inocência, saúde, felicidade, satisfação, romantismo, charme, brincadeira, leveza, delicadeza, feminilidade
+* Amarelo: sabedoria, conhecimento, relaxamento, alegria, felicidade, otimismo, idealismo, imaginação, esperança, claridade, radiosidade, verão, desonestidade, covardia, traição, inveja, cobiça, engano, doença, perigo
+* Laranja: humor, energia, equilíbrio, calor, entusiasmo, vibração, expansão, extravagância, excessivo, flamejante
+* Verde: cura, calma, perseverança, tenacidade, autoconsciência, orgulho, imutabilidade natureza, meio ambiente, saudável, boa sorte, renovação, juventude, vigor, Primavera, generosidade, fertilidade, ciúme, inexperiência, inveja, imaturidade, destruição
+* Azul: fé, espiritualidade, contentamento, lealdade, paz, tranquilidade, calma, estabilidade, harmonia, unidade, confiança, verdade, confiança, conservadorismo, segurança, limpeza, ordem, céu, água, frio, tecnologia, depressão
+* Roxo/Violeta: erotismo, realeza, nobreza, espiritualidade, cerimônia, misterioso, transformação, sabedoria, conhecimento, iluminação, crueldade, arrogância, luto, poder, sensibilidade, intimidade
+* Marrom: materialismo, excitação, terra, casa, ar livre, confiabilidade, conforto, resistência, estabilidade, simplicidade
+* Preto: não, poder, sexualidade, sofisticação, formalidade, elegância, riqueza, mistério, medo, anonimato, infelicidade, profundidade, estilo, mal, tristeza, remorso, raiva
+* Branco: sim, proteção, amor, respeito, mesura, pureza, simplicidade, limpeza, paz, humildade, precisão, inocência, juventude, nascimento, inverno, neve, bom, esterilidade, casamento (culturas ocidentais), morte (culturas orientais), frio, clínico, estéril
+* Prata: riqueza, glamour, fascínio, diferença, natural, liso, suave, macio, elegante, tecnológico
+* Ouro: preciosidade, riqueza, extravagância, calor, riqueza, opulência, prosperidade, grandeza
+
+
+temos a representção de cores por Hexadecimal(#0000ff blue) sempre usando o (#);
+tem tambem por rgb(red,green,blue);
+por nome que e sor colocar nome da cor;
+e por hsl(matis,saturação e iluminação)
+
+Cores primarias;
+-amarelo,vermelho e azul
+Cores segundarias;
+-laranja, violeta, verde
+cores terciarias;
+ amarelo-esverdiado
+amarelo-alaranjado
+vermelho-alaranjado
+vermelho-arroxeadoo
+azul-arroxeado
+azul-esverdiado
+
+
+CATEGORIAS DE FONTRES:
+
+- Serifadas(tem o efeito embaixo no pé)
+- Sans Serif(não tem o efeito)
+- Monoespaçada(todas as letras tem a mesma largura)
+- Handwriting(feito para simula coisdas feitas a mão)
+- display(não segue nenhuma regra)
+
+MEDIDAS DE FONTE:
+
+medidas absolutas
+cm, mm, in(polegada), px, pt, pc
+medidas Relativas
+em, ex, rem, vw, vh,%
+busque sempre usar o em ou o px(de preferenia o em)
+
+           	
+	
+ 
+
+
+
+
+
+
+
+
