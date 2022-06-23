@@ -112,6 +112,11 @@ iana.org -> para saber quaal o type de download da teg <a>.
 <td> -> table data
 <caption> para bota um text ta tabela por inteiro
 
+atributos:
+contenteditable="true" serve para escreva na pagina
+hidden ele esconde uma teg
+tabindex="1" para navegar pela tecla do teclado
+
 
 
 
