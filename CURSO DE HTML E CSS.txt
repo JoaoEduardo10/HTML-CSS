@@ -220,7 +220,10 @@ vertical-align: ;sever para mover dados de uma tabela para o top ou bottom.(alin
 <colgroup>
 <col >  esse dois serve para selecionar uma coluna teita no htmls e modificar no css
 overflow-x: conteudo que esta tranbordando
-
+background-otigin: : para escolher de onde a imagen vai começãr, a origem dela 
+background-clip: ; inicia a parte do paddin
+opacity: calc(0.70); para ddeixar o fundo tranparente
+letter-spacing: 8px; espaçamento entre as lettras
 
 
 
