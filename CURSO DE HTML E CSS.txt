@@ -111,11 +111,14 @@ iana.org -> para saber quaal o type de download da teg <a>.
 <tr colspan="2" para ocupar colunas rowspan="3" para ocupar linhas> -> table row
 <td> -> table data
 <caption> para bota um text ta tabela por inteiro
+<figure> -> serve para dizer o n que e a imagem de uma forma semantica usando a teg <figcaption>
+
 
 atributos:
 contenteditable="true" serve para escreva na pagina
 hidden ele esconde uma teg
 tabindex="1" para navegar pela tecla do teclado
+poster -> serve para botar uma imagem no video
 
 
 

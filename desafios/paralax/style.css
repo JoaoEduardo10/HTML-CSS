@@ -38,6 +38,10 @@ div.img3{
 }
 div.text1, div.txt2, div.txt3{
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    justify-content: center;
     letter-spacing: 8px;
     text-transform: uppercase;
     top: 50vh;
