@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body > h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.212);
+}
+.coteiner{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.822);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 240px;
+    height: 390px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 0, 0, 0.425);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.486);
+}
+div > h1{
+    margin-top: 3px;
+}
+p{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: black;
+    padding-right: 3px;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    border-radius: 3px;
+    font-size: 2rem;
+
+}
+table{
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4px;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(175, 165, 165);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.igual{
+    height: 100px;
+}
+.botao0{
+    width: 100px;
+}

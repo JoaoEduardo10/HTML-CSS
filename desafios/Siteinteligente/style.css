@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+.fora{
+   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: aquamarine;
+    
+}
+.inv{
+    display: none;
+}
+.fora > h1{
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+}
+p{
+    font-size: 2rem;
+}
+.principal{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+
+}
+.invisivel{
+    display: none;
+}
+.principal > h1{
+    position: absolute;
+    top: 3%;
+}
+
+.item{
+    height: 40px;
+    width: 120px;
+}
+
+.posi1{
+    
+}
+.ivisivel1{
+    display: none;
+}
+.posi2{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.ivisivel2{
+    display: none;
+}
+.posi3{
+    position: absolute;
+    left: 75%;
+}
+.ivisivel3{
+    display: none;
+}
+.posi4{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.ivisivel4{
+    display: none;
+}
+.posi5{
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+.ivisivel5{
+    display: none;
+}
+.posi6{
+    position: absolute;
+    left: 10%;
+}
+.ivisivel6{
+    display: none;
+}
+.posi7{
+    position: absolute;
+    top: 45%;
+}
+.ivisivel7{
+    display: none;
+}
+.posi8{
+   position: absolute;
+   top: 80%; 
+}
+.ivisivel8{
+    display: none;
+}

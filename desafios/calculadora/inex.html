@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>João Eduardo</h1>
+    <div class="coteiner">
+        <h1>Calculadora</h1>
+        <p id="resposta"></p>
+        <table>
+            <tr>
+                <td><Button onclick="apagar()">C</Button></td>
+                <td><Button onclick="voltar1()">&lt;</Button></td>
+                <td><Button onclick="insert('/')">/</Button></td>
+                <td><Button onclick="insert('*')">*</Button></td>
+            </tr>
+            <tr>
+                <td><Button onclick="insert('7')">7</Button></td>
+                <td><Button onclick="insert('8')">8</Button></td>
+                <td><Button onclick="insert('9')">9</Button></td>
+                <td><Button onclick="insert('-')">-</Button></td>
+            </tr>
+            <tr>
+                <td><Button onclick="insert('4')">4</Button></td>
+                <td><Button onclick="insert('5')">5</Button></td>
+                <td><Button onclick="insert('6')">6</Button></td>
+                <td><Button onclick="insert('+')">+</Button></td>
+            </tr>
+            <tr>
+                <td><Button onclick="insert('1')">1</Button></td>
+                <td><Button onclick="insert('2')">2</Button></td>
+                <td><Button onclick="insert('3')">3</Button></td>
+                <td rowspan="2"><Button onclick="somar()" class="igual">=</Button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><Button onclick="insert('0')" class="botao0">0</Button></td>
+                <td><Button onclick="insert('.')">.</Button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
