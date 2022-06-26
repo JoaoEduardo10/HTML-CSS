@@ -55,6 +55,9 @@ ESTRUTURAS BÁSICA;
 
 
 COMANDOS
+
+PARA CONFIGURAÇÕES;
+
 <h1> -> titulos(teg)
 <p> -> paragrafo(teg)
 <img src = "foto.png " alt = 'explo de algo" -> para colocar fotos
@@ -95,33 +98,122 @@ iana.org -> para saber quaal o type de download da teg <a>.
 <video width="400" controls  poster="imagem/limoes-capa.png">
 	<source src="" type="" -> colocar os videos
 <video>
+<aside> -> barra lateral.
 <main> -> diz que é o conteudo principal
 <div> -> (box level) ele quebra a linha
 <span> -> (inline level) Não quebra a linha
+<figure> -> serve para dizer o n que e a imagem de uma forma semantica usando a teg <figcaption>
+<select> -> menu de opçoes
+<option> -> opcoes selecionadas
+<optiongrup> - agrupamentos os option dentro de um select
+
+---------------------------------------------------------------------------------------------------------------------------
+PARTE SEMANTICA DO COPOR DO SITE
 <header> -> cabeçalho..inicio do site != header
 <main> -> conteudo principal
 <footer> -> rodapé
 <nav> -> para navegação
 <setion> -> seções dentro do site
 </article> ->  assunto princiapl
-</aside> -> assunto de mais(conteudo periferico)
+</aside> -> barra lateral
+
+
+--------------------------------------------------------------------------------------------------------------------------
+PARTE DE TABELAS;
 <table> - para criar tabelas
 // na tebelas simples temos o "table row"(linhas de tabela),"table haeder"(cabeçalho de tabela),
 "table DATA"(dado de tabela)//
 <tr colspan="2" para ocupar colunas rowspan="3" para ocupar linhas> -> table row
 <td> -> table data
 <caption> para bota um text ta tabela por inteiro
-<figure> -> serve para dizer o n que e a imagem de uma forma semantica usando a teg <figcaption>
+
+-------------------------------------------------------------------------------------------------------------------------
+PARA CRIAR FORMULARIOS;
+<form> - para inicia um formulario
+<fieldset> - agrupamento de infromações.
+<legend> - para criar um titulo para o <fieldset>.
+<label>-serve para identificar tegs de entrada de dados
+<button> - serve para faer um botão na pagina
+<datalist> sugere lista de valores(nomes ou numeros) para a pessoa adicionar no <inpult>.
 
 
-atributos:
+TIPPOS DE IMPULT;
+<TEXTarea> -> adiciona uma area para escrever texto
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+ATRIBUTOS:
+
+ATRIBUTOS GLOBAIS;
 contenteditable="true" serve para escreva na pagina
 hidden ele esconde uma teg
 tabindex="1" para navegar pela tecla do teclado
 poster -> serve para botar uma imagem no video
 
+ATRIBUTOS BUTTOM;
+- type = submit -> que vai enviar o formulario/ reset -. vai limpar o formulario /buttom -> algusn entendem que tbm vai emviar o formulario 
+
+ATRIBUTOS INPULT/GLOBAIS;
+- autocpmplite -> serve para termonar de escreva o que voce mais usa
+- autofocus -> o unpult vai altomaticamente focado (sendo so um por pagina
+- disabled -> para desabilitar o campos
+- readonly- mesmo que o  disabled
+- value 
+- form -> lincar o inpulte com um formulário
+- name -> para identificar o inpult
+- required -> vai dier que o inpulte é obrigatorio
+- placeholder -> ele serve para deixa o nome dentro do <inpult>, servido so para alguns deles 
+
+ATRIBUTOS INPULT/PASSWORD;
+- minlenght -> vai serve para gigitar o minimo de quantos caracteres sua senha deve ter.
+- maxlenght -> o maximo de caracteres.
+- size -> indica o tamanho do campos.
+- pattern -> serve para faer padrois de seguraça de senhas
+- inputmode -> serve para como voçe vai abre o teclao no celular
+
+ATRIBUTOS INPULT/EMAIL;
+- multiple -> permite colar mais de um email separados por virgulas
+- minlenght -> vai serve para gigitar o minimo de quantos caracteres sua senha deve ter.
+- maxlenght -> o maximo de caracteres.
+- size -> indica o tamanho do campos.
+- pattern -> serve para faer padrois de seguraça de senhas
+
+ATRIBUTOS INPULT/URL;
+- minlenght -> vai serve para gigitar o minimo de quantos caracteres sua senha deve ter.
+- maxlenght -> o maximo de caracteres.
+- size -> indica o tamanho do campos.
+- pattern -> serve para faer padrois de seguraça de senhas
+- spellcheck ->habilita a verificação ortografica
+
+ATRIBUTOS INPULT/file(arquivos da maquina;
+- value
+- accept -> descreve que tipos de aqrquivos vai ser aceito
+- file -> a lista de arquivos ou arquivo
+- multple -> serve para enviar multiplos arquivos
+===============================================================
+caso use le tbm tem que bota isso no formulario
+\<form action="" method="post" enctype="multipart/form-data">/
+===============================================================
+
+ATRIBUTOS INPULT/checkbox;
+- checked -> para deixar marcado por padrão
+
+ATRIBUTOS INPULT/search(buscar no sitre);
+- list
+- pattern
+- aria-label ->
+
+ATRIBUTOS INPULT/NUMBER;
+- min / max
+- step -> quanto vc que polar exd 100 em 100.
 
 
+ATRIBUTOS INPULT/RANGE 9seleciona um valor numerico como uma barra deslize;
+- min /max
+-step -> quanto vc que polar exd 100 em 100.
+
+--------------------------------------------------------------------------------------------------------------------------s
 
 
 Imagem:
@@ -161,104 +253,123 @@ ele tem seletores, declarações e toda declaração tem sua propriedade e seu valor
 -> siginifica CASCADING STYLE  SHEETS
 -> ela cuida da parte bonita do texto o design
 
-
+==========================================================================================================================
 COMANDOS:
 
-background-color: para cor de fundo
-color: cor das letras.
-fonte: botar o tipo de fonte e o tamanho junto
+CONFIGURAÇÕES DE FONTES ;
+
+font: botar o tipo de fonte e o tamanho junto
 font-family; para botar a fote que desejar
 font-size; tamanho da fonte
-text-align; para ajusta os texto
-text-decoration: underline; para botar sublinhado
-background-image: ; para fazer degrad
-* {
-}    seletor global das CSS
-
-background-attachment: fixed; fundo fixo
 font-weight(peso): ; para calcular o peso
 font-style: ; para escolher o estilo da fonte(italico por ai.
 fonte: : orde, Fstyle Fweight Fsize Ffamily(F siguinifica fonte)
-
-@font-face { para botar fontes externas
-            font-family: ;
-            src: url('Filxgirl.TTF') format('truetype');
-
-
-            /* 
-                - opentype(otf)
-                - truetype(ttf)
-                - embedded-opentype
-                - truetype-att
-                -svg
-
-
-
-            */
-
-text-indent: 20px; para ajeitar o inicio do paragrafo
-bordder: cria uma borda(interna)
-border-radius: 20px; para ajeitra a borda(mais arredondada)
-height: 200px; altura
-width: 200px; largura
-display: inline-block; para botar tuudo na mesma linha
-padding: espaco (interno)
-margin: espaço (externo)
-outline; cria uma borda (externa)
-border-image-source: url('borda.png'); para adicionar imagem como bordA
-border-image-slice: 20; O TAMANHO DA DISTORÇÃO DA BODA
-border-image-repeat: repeat; PARA A BODAR REPETIR
-border-image: url('borda.png') 27 repeat; jeiro completo
-transition-duration: ; para o tempo de transição
- line-height: ; altura da linha.
-list-style-position: inside; posiçao as bolas em uma lista
-columns: esolher colunas
-list-style-type: '\2714'; para botar emojis no css, sempre coma contra barra
-position: relative, absolut; para saber qual a posução ficça
-background-attachment: fixed; para bota a posicao da imagem de fundo
-text-transform: uppercase; para por todas as letras em maisculo
 font-variant: small-caps; tabem deixa as letras maiusculas mas com as primeira maiores
-border-collapse: ; serve para jutar as bordas
-vertical-align: ;sever para mover dados de uma tabela para o top ou bottom.(alinhamento vertical
-<colgroup>
-<col >  esse dois serve para selecionar uma coluna teita no htmls e modificar no css
-overflow-x: conteudo que esta tranbordando
+font-stretch: arlagamento ou encolhimento da fonte
+line-height: ; altura da linha.
+text-transform: uppercase; para por todas as letras em maisculo
+text-align; para ajusta os texto
+text-indent: 20px; para ajeitar o inicio do paragrafo
+text-decoration: underline; para botar sublinhado
+letter-spacing: 8px; espaçamento entre as lettras
+word-space; faz espaçamento entre pralavras.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+CONFIGURAÇÕES DE FUNDO E COR;
+color: cor das letras.
+background-color: para cor de fundo.
+background-image: ; para fazer degrad.
+background-attachment: fixed; fundo fixo.
 background-otigin: : para escolher de onde a imagen vai começãr, a origem dela 
 background-clip: ; inicia a parte do paddin
 opacity: calc(0.70); para ddeixar o fundo tranparente
-letter-spacing: 8px; espaçamento entre as lettras
+background-attachment: fixed; para bota a posicao da imagem de fundo
+
+------------------------------------------------------------------------------------------------------------------------------
+CONFIGURAÇOES DE BORDA, PADDIN, MARGEM, ALTIURA E LARGURA, DISPLAY E TRASIÇOES E POSICOES.;
+border-image-source: url('borda.png'); para adicionar imagem como bordA
+border-image-slice: 20; O TAMANHO DA DISTORÇÃO DA BODA
+border-image-repeat: repeat; PARA A BODAR REPETIR
+border-collapse: ; serve para jutar as bordas
+border-image: url('borda.png') 27 repeat; jeiro completo
+bordder: cria uma borda(interna)
+border-radius: 20px; para ajeitra a borda(mais arredondada)
+outline; cria uma borda (externa)
+
+padding: espaco (interno)
+
+margin: espaço (externo)
+
+height: 200px; altura
+width: 200px; largura
+
+display: inline-block; para botar tuudo na mesma linha
+transition-duration: ; para o tempo de transição
+position: relative, absolut; para saber qual a posução ficça
+
+---------------------------------------------------------------------------------------------------------------------------
+CONFIGURAÇÃO DE LISTA OU TABELA;
+
+list-style-position: inside; posiçao as bolas em uma lista
+list-style-type: '\2714'; para botar emojis no css, sempre coma contra barra
+overflow-x: conteudo que esta tranbordand
+
+vertical-align: ;sever para mover dados de uma tabela para o top ou bottom.(alinhamento vertical
+columns: esolher colunas
+<colgroup>
+<col >  esse dois serve para selecionar uma coluna teita no htmls e modificar no css
+--------------------------------------------------------------------------------------------------------------------------
+
+
+CONFIGURAÇÕES DE FLEXBOX;
+- flex-direction: column; MUDA A DIREÇÃO
+- flex-warp ela deixa a linha quebrar
+- flex flo shorthand de flex diretion e flex-warp
+- gap: ; O tamanho do espaçamento
+- flex-basis: ;almenta do tamanhos dos items
+- flex-grow é o crecimento dos item denttro do coteiner
+- flex-shrink capacidade o item encolher dentro do coteiner
+-flex shorthand de flex-grow,flex-shrink e flex-basis e usa respectivamente nessa ordemSSS
 
 
 
 
-
+---------------------------------------------------------------------------------------------------------------------------
 
 
 PISEUDO CLASS
-div:hover{
-	quando passar o mouse por cima
-}
-
-
-a:visited{ pode muda a cor do teste, se for um link e pode entra quando voltar vai esta de outra corSS
-a:active{ para quando clicar e ficar ativo...
-:nth-child(2n) para zebra as linha..deixa um pintado e outro não pintado
-
-
+ :hover quando o mouse passar em cima.
+ :focus quando focar algo pode muda seu estado
+ :visited{ pode muda a cor do teste, se for um link e pode entra quando voltar vai esta de outra corSS
+ :active{ para quando clicar e ficar ativo...
+ :first-child {} Seleciona o primeiro filho.
+ :nth-child() para escolher qual a teg filho.
+ :nth-of-type() pega dos tipos apetir da teg qque vc botou como filhos
+ 
+.........................................................................................................................
 
 PISEUDOS ELEMENTOS
- A::before{ antes de algun elemento
-A::after{ DEPOIS DE ALGUN ELEMENTO
+ ::before{ antes de algun elemento
+ ::after{ DEPOIS DE ALGUN ELEMENTO
+ ::first line{ pega a primeira linha dos texto os das tegss
 dentro deles pode ter o content: ''
-......................................
+..........................................................................................................................
 
 
 
 
 REGRAS DO CSS:
 @charset "UTF-8": serve para aceitar aentuação
+* {
+}    seletor global das CSS
+@font-face { para botar fontes externas
+	font-family: ;
+	src: url('Filxgirl.TTF') format( - opentype(otf ),- truetype(ttf),- embedded-opentype,- truetype-at, -svg');
 
+}
 
+--------------------------------------------------------------------------------------------------------------------------
 
 
 
