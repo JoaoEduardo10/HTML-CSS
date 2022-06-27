@@ -340,6 +340,7 @@ CONFIGURAÇÕES DE FLEXBOX;
 
 PISEUDO CLASS
  :hover quando o mouse passar em cima.
+ :
  :focus quando focar algo pode muda seu estado
  :visited{ pode muda a cor do teste, se for um link e pode entra quando voltar vai esta de outra corSS
  :active{ para quando clicar e ficar ativo...
