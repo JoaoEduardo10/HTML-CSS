@@ -285,7 +285,8 @@ background-otigin: : para escolher de onde a imagen vai começãr, a origem dela
 background-clip: ; inicia a parte do paddin
 opacity: calc(0.70); para ddeixar o fundo tranparente
 background-attachment: fixed; para bota a posicao da imagem de fundo
-
+object-fit: cover; ele funciona como o background-zise, so que ele funciona para imagem dentro de uma div ou 
+dentro de uma div ou dentro de u emveloper.
 ------------------------------------------------------------------------------------------------------------------------------
 CONFIGURAÇOES DE BORDA, PADDIN, MARGEM, ALTIURA E LARGURA, DISPLAY E TRASIÇOES E POSICOES.;
 border-image-source: url('borda.png'); para adicionar imagem como bordA
