@@ -29,9 +29,10 @@ document.querySelector('#quantidade').addEventListener('change', atualizarPreso)
 document.querySelector('#js').addEventListener('change', atualizarPreso)
 document.querySelector('#layout-sim').addEventListener('change', atualizarPreso)
 document.querySelector('#layout-nao').addEventListener('change', atualizarPreso)
-document.querySelector('#prazo').addEventListener('mousemove', function(){
+document.querySelector('#prazo').addEventListener('change', function(){
     let prazo = document.querySelector('#prazo').value
     document.querySelector('label[for=prazo]').innerHTML = `Praso: ${prazo} semanas`
+    
     
 })
 
@@ -42,21 +43,25 @@ function atualizarPreso(){
     let preco = quantidade * 100
     let temjs = document.querySelector('#js').checked;
     let incluilayout = document.querySelector('#layout-sim').checked
-    let prazo = document.querySelector('#prazo').value
+    let prazo1 = document.querySelector('#prazo').value
+    let exit = document.querySelector('#prazo')
+    let prazo = Number(prazo1)
+
     
-    
-    if(temjs){
-        preco *= 1.1
-    }
-    if(incluilayout){
-        preco = preco + 500
-    } 
-    
+    if(temjs) preco *= 1.1
+    if(incluilayout) preco = preco + 500
+
+    let tax = 1 - prazo * 0.1
+
+    preco *= 1 + tax
+   
     
     document.querySelector('#preco').innerHTML = `R$${preco.toFixed(2)} ` 
     
 
 }
+
+
 
 
 
