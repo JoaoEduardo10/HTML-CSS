@@ -308,6 +308,15 @@ width: 200px; largura
 display: inline-block; para botar tuudo na mesma linha
 transition-duration: ; para o tempo de transição
 position: relative, absolut; para saber qual a posução ficça
+--------------------------------------------------------------------------------------------------------------------------
+ANIMAÇÕES CSS;
+
+- animation: NOME DO KEYFRAME / TEMPO DE DURAÇÃO;
+@keyframes zoom {} PARA FAZER AS ANIMAÇOES
+
+
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------
 CONFIGURAÇÃO DE LISTA OU TABELA;
