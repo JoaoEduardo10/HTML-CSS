@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main class="coteiner"><!--contem todo o projeto-->
+        <div class="img"><!--contem a imagem de fundo-->
+
+        </div>
+        <div class="coteiner-form"><!--contem o formulario-->
+                    <h1>Sign Up</h1>
+                <label for="nome" class="form-input">
+                    
+                    <span>Nome Completo</span>
+                    <input type="text" name="nome" id="nome" value="" placeholder="Nome...">
+                </label>
+                <label for="email" class="form-input">
+                    <span>Email</span>
+                    <input type="email" name="email" id="email" value="" placeholder="Email...">
+                </label>
+                <label for="nomeUsuario" class="form-input">
+                    <span>Nome de Usuario</span>
+                    <input type="text" name="nomeUsuario" id="nomeUsuario" value="" placeholder="UrserName...">
+                </label>
+                <label for="senha" class="form-input">
+                    <span>Senha</span>
+                    <input type="password" class="senha" name="senha" id="senha" value="" placeholder="**********">
+                    <i class="fa-solid fa-eye " id="soldado1"></i>
+                    <i class="fa-solid fa-eye-slash remover" id="soldado2"></i>
+                </label>
+                <label for="conf-senha" class="form-input">
+                    <span>Confirma senha</span>
+                    <input type="password" class="senha"  name="conf-senha" id="conf-senha" value="" placeholder="**********">
+                    <i class="fa-solid fa-eye " id="soldado3"></i>
+                    <i class="fa-solid fa-eye-slash remover" id="soldado4"></i>
+                </label>
+                <div class="radio">
+                        <input type="checkbox" name="radio" id="radio"><span>I agree to the <a href="#">Terms of User</a></span>
+                        
+                </div>
+                <div class="botao">
+                    <button>Sing Up</button>
+                    <button>Sing in</button>
+                </div>
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+</html>
