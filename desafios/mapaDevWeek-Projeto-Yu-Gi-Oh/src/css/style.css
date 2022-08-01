@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --font: 'Outfit', sans-serif;
+}
+
+body{
+    font-family: var(--font);
+    background-image: url("../imagens/fundo-site-enbarsado.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 40px;
+}
+.header img{
+    width: 50px;
+
+}
+.header h1{
+    color: #f1ecff;
+}
+.main-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.6rem;
+    margin: 30px 0;
+}
+.bt-seta{
+    background-color: #f1ecff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.bt-seta:hover{
+    background-color: #2D627F;
+     
+}
+.lista-carts {
+    width: 310px;
+    height: 520px;
+    position: relative;
+    
+}
+.cart{
+    background-color: blueviolet;
+    background-image: url("../imagens/imagem\ de\ fundo-cart.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.377);
+    transition: opacity 0.3s ease-in-out;
+}
+.cart.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.header-cart{
+    background-color: transparent;
+    padding: 6px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.main-star-cart{
+    display: flex;
+    justify-content: end;
+    gap: 0.2rem;
+}
+.corpo-star{
+    margin-top: 2px;
+    background-color: rgb(228, 32, 18);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    
+}
+.fa-star{
+    color: rgba(255, 166, 0, 0.747);
+    font-size: 1rem;
+}
+.main-img-cart{
+    background-color: aquamarine;
+    background-image: url("../imagens/pexels-pixabay-247676.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px  rgba(0, 0, 0, 0.466);
+    border-radius: 3px;
+}
+#img1{
+    width: 60%;
+    height: 260px;
+    transform: rotateY(180deg);
+}
+#img2{
+    width: 100%;
+    height: 270px;
+}
+#dragao{
+    width: 100%;
+    height: 270px;
+}
+.footer-section-cart{
+    margin-top: 0.9rem;
+    background-color: rgb(235, 206, 168);
+    padding: 2px;
+    border: 1px solid rgba(189, 68, 24, 0.692);
+    
+}
+.poder-de-ataque{
+    border-top: 1px solid rgb(61, 59, 59);
+    text-align: right;
+    margin-top: 3rem;
+}
+
+
