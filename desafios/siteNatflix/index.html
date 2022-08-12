@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Netflix-Brasil</title>
+</head>
+<body>
+    <!--comoço do cabeçalho-->
+    <header class="coteiner-header">
+            <!--serve para colocar um preto emcima da imagem de undo (black de funfo)-->
+            <div class="color-hearder">
+                <!--coteiner da parte de cima com imagem e a section(color topheader)-->
+                <div class="top-header">
+                    <div class="img-netflix">
+                        <img src="src/imagens/R.png" alt="imagem netflix">
+                    </div>
+                    <!--idiomar-enter-->
+                    <div class="coteinet-idioma-enter">
+                        <select name="idioma" id="idioma" >
+                            <option value="portugues">&#127760;Português</option>
+                            <option value="ingles">&#127760;Inglês</option>
+                        </select>
+                        <button>Entrar</button>
+                        
+                    </div><!--fim idioma-enter-->
+                </div><!--fim top-header-->
+                <!--copor header-->
+                <div class="corpo-header">
+                    <h1>
+                        Filmes, séries e muito mais.<br> Sem limite.
+                    </h1>
+                    <p class="corpo-p p">Assita onde quiser.Cancele quando quiser.</p>
+                    <p class="corpo-p-2 p">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+                    <div class="form">
+                        <form action="">
+                            <label class="temfocus" for="email" id="label1">Email</label>
+                            <input type="email" id="email" required>
+                            <button>Vamos la <i class="fa-solid fa-angle-right"></i></button>
+                            <p style="text-align: left; font-family: sans-serif; color: lightcoral; margin-top: 0.5rem;" id="outRespInput"></p>
+                        </form>
+                        
+                        
+                        
+                    </div>
+                </div> <!--fim corpo-header-->
+            </div><!--fim do (black de fundo)-->
+            
+    </header> <!--Fim cabeçalho-->
+    <!--COMECA O MAIN-->
+    <main class="coteiner">
+        <!--começa a section-->
+        <section class="coteiner-conteudo">
+            <div class="coteiner-texto">
+                <h2>Aproveite na TV.</h2>
+                <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </div>
+            <div class="coteiner-video">
+                <div class="videos">
+                    <img src="src/imagens/tv-img-fundo.png" alt="">
+                    <video autoplay loop muted src="src/videos/abertura netflix.mp4"></video>
+                </div>
+            </div>
+        </section><!--termina a section-->
+        <!--começa a section-->
+        <section class="coteiner-conteudo" id="novo-coteiner" style="padding-bottom: 4rem;">
+            
+                <div class="novo-coteiner">
+                    <img id="imagem" src="src/imagens/mobile-0819-celular.jpg" alt="">
+                    <div class="coteiner-download">
+                        <div class="download-img">
+                            <img src="src/imagens/boxshot-string-fings.png" alt="">
+                        </div>
+                        <div class="download-texto">
+                            <div class="string-text">
+                               <h3>Stranger Things</h3>
+                            </div>
+                            <div>
+                                <p>Download em andamento...</p>
+                            </div>
+                        </div>
+                        <div class="download-icon">
+                            <img src="src/imagens/download-icon-dowload.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coteiner-texto">
+                <h2>Baixe séries para assistir offline.</h2>
+                <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+            </div>
+        </section><!--termina a section-->
+        <!--começa a section-->
+        <section class="coteiner-conteudo"  style="padding-bottom: 5rem;">
+            <div class="coteiner-texto">
+                <h2>Assista quando quiser.</h2>
+                <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+            </div>
+            <div class="coteiner-video">
+                <div class="videos">
+                    <img id="img3" src="src/imagens/device-pile-computador.png" alt="">
+                    <video autoplay loop id="video3"  src="src/videos/Best Stranger Things Gif.mp4"></video>
+                </div>
+            </div>
+        </section><!--termina a section-->
+        <!--começa a section-->
+        <section class="coteiner-conteudo" >
+            <div class="coteiner-video">
+                <div class="videos">
+                    <img src="src/imagens/imagem-crianca.png" alt="Imagens para crianças">
+                    
+                </div>
+            </div>
+            <div class="coteiner-texto">
+                <h2>Crie perfis para crianças.</h2>
+                <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+            </div>
+            
+        </section><!--termina a section-->
+        <!--comreça sessao-->
+        <section class="section-perguntas" id="section-select">
+            <h2>Perguntas frequentes</h2>
+            <div class="coteiner-preguntas">
+                    <div class="perguntas">
+                        <div class="pergunta" id="pergunta1">
+                            <p>O que é Netflix?</p>
+                            <img id="img1" src="src/imagens/sinal-de-mais.png" alt="sinal cruzado">
+                        </div>
+                        <div class="outPergunta escondido" id="resposta1">
+                            <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.</p>
+                            <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                        </div>
+                    </div>
+                    <div class="perguntas">
+                        <div class="pergunta" id="pergunta2">
+                            <p>Quanto custa a Netflix?</p>
+                            <img src="src/imagens/sinal-de-mais.png" alt="sinal cruzado">
+                        </div>
+                        <div class="outPergunta escondido" id="resposta2">
+                            <p>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.</p>
+                        </div>
+                    </div>
+                    <div class="perguntas">
+                        <div class="pergunta" id="pergunta3">
+                            <p>Onde posso assitir?</p>
+                            <img src="src/imagens/sinal-de-mais.png" alt="sinal cruzado">
+                        </div>
+                        <div class="outPergunta escondido" id="resposta3">
+                            <p>Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.</p>
+                            <p>Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</p>
+                        </div>
+                    </div>
+                    <div class="pergunta" id="pergunta4">
+                        <p>Como Faco para Cancelar</p>
+                        <img src="src/imagens/sinal-de-mais.png" alt="sinal cruzado">
+                    </div>
+                    <div class="outPergunta escondido" id="resposta4">
+                        <p>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.</p>
+                    </div>
+                    
+            </div>
+        </section><!--termina sessao-->
+    </main><!--termina o main-->
+    <script src="src/js/script.js"></script>
+</body>
+</html>
