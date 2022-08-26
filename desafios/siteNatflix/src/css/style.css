@@ -11,7 +11,11 @@
 }
 *{
     font-family: var(--font-Netflix);
+   
 }
+
+body{ background-color: #000000;}
+
 
 
 .coteiner-header{
@@ -176,7 +180,7 @@
     width: 100%;
     height: 500px;
     border-top: 8px solid #222222;
-    
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,31 +273,47 @@
     
 }
 .download-img{
-    width: 24%;
-    height: 100%;
+    width: 100%;
+    
     
 }
 #imagem{
     width: 80%;
     
 }
-.download-img img{
-    width: 100%;
-    text-shadow: 2px 2px 7px black;
+.dowbload-img{
+    width: 20%;
+}
+.string-text{
+    width: 160px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 0.1rem; 
+    
+}
+.string-text p{
+    color: #006DBE;
+    font-family:sans-serif;
+    font-weight: lighter;
 }
 .string-text h3{
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.download-icon{
+    width: 20%;
 }
 
 .section-perguntas{
     background-color: #000000;
-    width: 100%;
+    
     border-top: 8px solid #222222;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    padding: 5rem;
     
     
 }
@@ -303,104 +323,221 @@
     margin-bottom: 3rem;
 }
 .coteiner-preguntas{
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    margin-bottom: 0.3rem;
     
 }
-.perguntas{
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    
-    
-    
-}
-
 .pergunta{
-    width: 100%;
-    height: 80px;
-    background-color: #303030;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    
-    
-}
-.pergunta p{
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.section-perguntas img{
-    width: 35px;
-}
-
-.outPergunta{
     background-color: #303030;
-    padding: 30px;
-   
-    flex-direction: column;
-    gap: 30px;
-
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 2;
     
 }
-.outPergunta p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
+
+
+
     
+.reposta{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #303030;
+    margin-top: 1px;
+    padding: 30px;
+    
+    transition: 0.2s;
+    
+}
+.aparecer{
+    animation: op 0.5s linear;
+}
+.voltar{
+    animation: esconder 0.5s linear;
 }
 
 .escondido{
-    display: none;
-    opacity: 0;
-    animation: desaparecer 0.4s  reverse;
-    
+  display: none;
+  transition: 0.2s;
     
 }
-.noescondido{
-    display: flex;
-    opacity: 1;
-    
-    animation: aparecer 0.4s  ease-in-out;
-    transition: all 2s ;
-    
-}
-
-@keyframes aparecer {
+@keyframes esconder {
     0%{
-        
-        transition: opacity 1s;
-        transform: translatey(-1%);
-        
-    }
-    100%{
-        
-        transition: opacity 1s;
-        transform: translatey(0%)
-        
-    }
-
-}
-@keyframes desaparecer {
-    0%{
-        
-
-        ;
-
         opacity: 1;
-        transition: opacity 1s;
-        transform: translatey(0%);
+        transform: translateY(0);
     }
     100%{
         opacity: 0;
-        transition: opacity 1s;
-        transform: translatey( -10%);
+        transform: translateY(-8%);
     }
 }
+
+@keyframes op {
+    0%{
+        opacity: 0;
+        transform: translateY(-10%)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.reposta p{
+    font-size: 1.6rem;
+   
+    font-family: sans-serif;
+}
+.fa-bars{
+    color: #706e6e;
+}
+.fa-x{
+    color: #706e6e;
+}
+
+.footer-form{
+    margin-top: 5rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.footer-form p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.form-flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.label2{
+    color: #222222;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    transition: 0.3s;
+    
+
+}
+.labefocus{
+    position: absolute;
+    top: 7%;
+    transition: 0.3s;
+}
+
+input#email2{
+    width: 60%;
+    height: 60px;
+    color: #222222;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 10px;
+}
+
+   
+
+.footer-form form button{
+    height: 60px;
+    width: 150px;
+    background-color: #E50914;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 1rem;
+    
+}
+
+
+.footer{
+    background-color: #000000;
+    color: #fff;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+.footer-titulo{
+    color: #706e6e;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.footer-lista{
+    margin-bottom: 2rem;
+}
+
+.lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.6rem;
+}
+.lista li a{
+    text-decoration: none;
+    color: #706e6e;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100%;
+}
+.lista li a:hover{
+    text-decoration: underline;
+}
+.footer-idioma{
+    margin-bottom: 2rem;
+}
+
+#idioma2{
+    height: 60px;
+    color: #706e6e;
+    width: 150px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #222222;
+}
+#idioma2 option{
+    background-color: black;
+    color: #706e6e;
+}
+.footer-p{
+    color: #706e6e;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+
+
+
+
 
 
  
