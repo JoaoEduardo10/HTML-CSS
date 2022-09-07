@@ -3,8 +3,10 @@
     padding: 0%;
 }
 
-body{
+body, html{
     background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
 }
 h1{
     text-align: center;
@@ -53,61 +55,3 @@ p{
     width: 120px;
 }
 
-.posi1{
-    
-}
-.ivisivel1{
-    display: none;
-}
-.posi2{
-    position: absolute;
-    top: 80%;
-    left: 10%;
-}
-.ivisivel2{
-    display: none;
-}
-.posi3{
-    position: absolute;
-    left: 75%;
-}
-.ivisivel3{
-    display: none;
-}
-.posi4{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-}
-.ivisivel4{
-    display: none;
-}
-.posi5{
-    position: absolute;
-    top: 80%;
-    left: 70%;
-}
-.ivisivel5{
-    display: none;
-}
-.posi6{
-    position: absolute;
-    left: 10%;
-}
-.ivisivel6{
-    display: none;
-}
-.posi7{
-    position: absolute;
-    top: 45%;
-}
-.ivisivel7{
-    display: none;
-}
-.posi8{
-   position: absolute;
-   top: 80%; 
-}
-.ivisivel8{
-    display: none;
-}
