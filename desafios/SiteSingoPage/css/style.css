@@ -24,6 +24,7 @@ html{
 
 /* parte do header */
 .hamburger{
+    
     width: 5rem;
     height: 5.8rem;
     position: fixed;
@@ -34,21 +35,27 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-    
+    text-align: center;
     
 }
+.fa-bars{
+    font-size: 4rem;
+    color: rgba(201, 67, 201, 0.726);
+    text-shadow: 0.5px 0.5px 0.5px plum;
+}
+
 .invisivel1{
     display: none;
 }
 .hamburger2{
     position: fixed;
-
+    
     height: 3rem;
     height: 3rem;
     right: 15rem;
     top: 2rem;
-    z-index: 99;
-    animation: entrada 1.4s;;
+    z-index: 101;
+    animation: entrada 1.4s;
 }
 .invisivel2{
     display: none;
@@ -149,11 +156,12 @@ header{
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(236, 230, 230);
     position: fixed;
     top: 0;
     right: 0;
     animation: entrada 1s;
+    z-index: 100;
     
    
 }
@@ -174,6 +182,7 @@ header{
     top: 40%;
     left: 50%;
     transform: translate(-50%);
+    
 }
 .menu-item{
     text-align: center;
@@ -183,7 +192,7 @@ header{
 .menu-link{
     font-family: var(--font3);
     font-size: 2rem;
-    color: grey;
+    color: gray;
     transition: color 0.5s;
 }
 
