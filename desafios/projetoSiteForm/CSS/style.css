@@ -27,7 +27,7 @@
 }
 .coteiner-form{
     width: 50%;
-    min-width: 534px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     padding: 2.5rem 4%;
