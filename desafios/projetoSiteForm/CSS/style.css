@@ -112,9 +112,9 @@ label i{
     cursor: pointer;
 }
 
-@media screen and (max-width: 379px){
+@media screen and (max-width: 375px){
     .coteiner-form{
-        width: 100vw;
+        min-width: 360px;
         
     }
     .botao{
@@ -149,7 +149,11 @@ label i{
    
 }
 
-
+@media screen and (max-width: 320px){
+    .coteiner-form{
+        min-width: 305px;
+    }
+}
 
 
 
