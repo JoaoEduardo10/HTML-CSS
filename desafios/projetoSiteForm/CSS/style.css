@@ -149,11 +149,7 @@ label i{
    
 }
 
-@media screen and (max-width: 350px){
-    .coteiner-form{
-        min-width: 305px;
-    }
-}
+
 
 
 
