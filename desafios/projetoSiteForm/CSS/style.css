@@ -27,7 +27,7 @@
 }
 .coteiner-form{
     width: 50%;
-    min-width: 400px;
+    min-width: 535px;
     display: flex;
     flex-direction: column;
     padding: 2.5rem 4%;
@@ -112,7 +112,7 @@ label i{
     cursor: pointer;
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 400px){
     .coteiner-form{
         min-width: 360px;
     }
