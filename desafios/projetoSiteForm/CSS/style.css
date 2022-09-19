@@ -112,7 +112,7 @@ label i{
     cursor: pointer;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     .coteiner-form{
         min-width: 360px;
     }
