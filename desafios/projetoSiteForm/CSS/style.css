@@ -112,9 +112,10 @@ label i{
     cursor: pointer;
 }
 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 375px){
     .coteiner-form{
         min-width: 360px;
+        background-color: red;
     }
     .botao{
         margin-top: 2rem;
