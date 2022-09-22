@@ -137,4 +137,11 @@ body{
     margin-top: 3rem;
 }
 
+@media screen and (max-width: 539px){
+    .lista-carts{
+        width: 300px;
+        height: 350px;
+    }
+}
+
 

@@ -1,144 +1,103 @@
-//variaveis de maniulaçcao html
-let input = document.getElementById('email')
-let input2 = document.getElementById('email2')
+let inEmail = document.querySelectorAll('input')
 
-//adiconar os ventos de focus do inpult-footer
-input2.addEventListener("focus",function(){
-    document.getElementById('email2').style.border = "1px solid lightseagreen"
-    document.querySelector('.label2').classList.add('labefocus')
-})
-
-//eventos de saida de focus ara inpult-footer
-input2.addEventListener('blur', function({target}){
-    if(target.value == ""){
-        document.querySelector('.label2').classList.remove('labefocus')
-    } 
-})
-
-//adiconar os ventos de focus do inpult-header
-input.addEventListener('focus', function ({target}) {
+const focus = ({ path }) => {
+    const form = path[1]
+    const label = form.childNodes[1]
     
+    label.classList.add('label-focus')
+    label.classList.remove('label') 
 
+}
+const focusOut = ({ path, target }) => {
+    const form = path[1]
+    const label = form.childNodes[1]
     
-        document.getElementById('label1').classList.add('focusout')
-        document.getElementById('email').classList.add('focus')
-    document.getElementById('label1').classList.remove('temfocus') 
-    
-    
-
-    
-    
-
-
-})
-
-//eventos de saida de focus ara inpult-header
-input.addEventListener('blur', function ({target}) {
-    
-    if (target.value == "") {
-        document.getElementById('label1').classList.remove('focusout')
+    if(target.value > 0){
+        label.classList.remove('label-focus')
         
-        document.getElementById('label1').classList.add('temfocus')
+    } else if(target.value <= 0){
+        label.classList.remove('label-focus')
+        label.classList.add('label')
     }
 
-    
-})
-
-//evento de perguntas
-
-
-//variaveis de manipulacao html
-let perguntas = document.querySelectorAll('.pergunta')
-let resposta = document.querySelectorAll('.reposta')
-let tegP = document.querySelectorAll('[data-p]')
-let icon = document.querySelectorAll('[data-icon]')
-
-//funçao para adicona icon
-const adicionarIconEClass = (irmao, novoIcon) => {
-
-    //remover o icone de bar e adicionar o icone de x
-    novoIcon.classList.remove('fa-bars')
-    novoIcon.classList.add('fa-x')
-    
-    //remover adicionar a class "aparecer" e remover a teg escondido e voltar
-    irmao.classList.add('aparecer')
-    irmao.classList.remove('escondido')
-    irmao.classList.remove("voltar")
-
-}
-//funcao para remover icons
-const removerIconEClass = (irmao, novoIcon) => {
-    //adicionar o icon bar e revvomer o icon X
-    novoIcon.classList.add('fa-bars')
-    novoIcon.classList.remove('fa-x')
-
-    //remover a teg aparecer e adicionar a teg voltar e a teg escondido
-    irmao.classList.remove('aparecer')
-    irmao.classList.add('voltar')
-    setTimeout( () => { // espera 0.5s para adicionar a teg escondido
-        irmao.classList.add('escondido')
-    },500)
-
 }
 
-const aparecer = ({path}) => {
-    //variavel que vai receber as teg
-    let irmao;
-    let novoIcon;
+inEmail.forEach((item) => item.addEventListener("focus",focus))
+inEmail.forEach((item) => item.addEventListener("focusout",focusOut))
+
+
+
+
+
+//anomação do conteiner de peguntas
+
+let pergunta = document.querySelectorAll('.pergunta')
+
+const aparecer = ({ path, target }) => {
+
     
-        //percorre sobre as erguntas
-       perguntas.forEach( (item) => {
-        //ver se a div-perguntas e a mesma o ietem
-            if(path[0] == item){ //se sim
-                irmao = path[0].nextElementSibling //pegar a tega irmao do elemento pergunta
-                novoIcon = path[0].lastElementChild //pega o a ultima teg filho do elemento pergunta
-               
-                //ver se a teg aparecer esta adicionada
-                if(irmao.className.indexOf('aparecer') == -1){ //se não
-                    
-                    adicionarIconEClass(irmao,novoIcon)
+    if(path[0] === target ){
+        const conteinerPai = path[1] //pegar a teg pai
+        const respostas = conteinerPai.childNodes[4] //pega a teg irmao
+        const targetL = path[0]
+        const icon = targetL.childNodes[3]
 
-                } else if(irmao.className.indexOf('aparecer') >= 1){ //se a class ecistir
+        
 
-                    removerIconEClass(irmao,novoIcon)
-                
-                }
-                
+        try {
+            if(respostas.classList.contains("escondido")){ //se escondido esta em documento
+                respostas.classList.remove("escondido") //remove
+                icon.classList.remove("fa-bars")
+                icon.classList.add("fa-x")
+            } else { //se nao
+                icon.classList.add("fa-bars")
+                icon.classList.remove("fa-x")
+                respostas.classList.add("aparecer") //adiciona a class de animação para desaparecer
+                setTimeout(() => { // espera 3s
+                    respostas.classList.add("escondido") //adiciona  class escondido
+                    respostas.classList.remove("aparecer") //remove class aparecer
+                },300)
             }
+        } catch (error) {
+            console.log(error)
+        }
+    } 
 
-            
-       })
-       
-       //percorre sobre as tegs
-       for(let i = 0; i < tegP.length; i++){
-        //se clicar emcima do paragrafo ou do incon
-            if(path[0] == tegP[i] || path[0] == icon[i]){
+    if(path[1] != target){
+        const conteinerPai = path[2] //pegar a teg pai
+        const respostas = conteinerPai.childNodes[4] //pega a teg irmao
+        const targetL = path[1]
+        const icon = targetL.childNodes[3]
 
-                //pegar a teg irmao do elemento perguntas e o ultimo filho da teg perguntas
-                irmao = path[1].nextElementSibling //elemento irmao
-                novoIcon = path[1].lastElementChild //ultimo elemento filho
-
-                //ver se a class aparecer esta adicionar
-                if(irmao.className.indexOf('aparecer') == -1){ //se não
-                    
-                    adicionarIconEClass(irmao, novoIcon)
-
-                } else if(irmao.className.indexOf('aparecer') >= 1){ //se sim
-                    
-                   removerIconEClass(irmao, novoIcon)
-                }
-                
-                break; //sair da repetição
-
+        try {
+            if(respostas.classList.contains("escondido")){ //se escondido esta em documento
+                respostas.classList.remove("escondido") //remove
+                icon.classList.remove("fa-bars")
+                icon.classList.add("fa-x")
+            } else { //se nao
+                icon.classList.add("fa-bars")
+                icon.classList.remove("fa-x")
+                respostas.classList.add("aparecer") //adiciona a class de animação para desaparecer
+                setTimeout(() => { // espera 3s
+                    respostas.classList.add("escondido") //adiciona  class escondido
+                    respostas.classList.remove("aparecer") //remove class aparecer
+                },300)
             }
-       }
-       
-   
-   
+        } catch (error) {
+            console.log(error)
+        }
+
+
+    }
+
+     
+
+    
+
+    
+
 }
 
 
-//adiconar eventos de clicks em cada un das perguntas  
-perguntas.forEach( (item) => item.addEventListener('click', aparecer))
-
+pergunta.forEach((itens) => itens.addEventListener('click', aparecer))
 
