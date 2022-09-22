@@ -1,11 +1,15 @@
 let inEmail = document.querySelectorAll('input')
 
-const focus = ({ path }) => {
+const focus = ({ path, target }) => {
     const form = path[1]
     const label = form.childNodes[1]
     
     label.classList.add('label-focus')
     label.classList.remove('label') 
+
+    if(target.value < 3){
+        
+    }
 
 }
 const focusOut = ({ path, target }) => {
